@@ -4,24 +4,26 @@
 //al posto dei multipli sia di 3 che di 5 stampi "FizzBuzz";
 
 
-//stampo i numeri da 1 a 100;
-for (var i = 1; i <= 100; i++) {
-    console.log(i);
+//creo una lista di numeri da 1 a 100;
+for (var i = 1; i <= 100 ; i++) {
 
-    //definisco i numeri multipli di 3 e 5;
+    //identifico i numeri multipli di 3 e 5;
     if ( i % 5 == 0 && i % 3 == 0 ) {
         console.log("fizzbuzz");
     }
 
-    //definisco i numeri multipli di 3;
+    //se il numero non è multiplo di 3 e 5 ma e solo un multiplo di 5, allora;
     else if ( i % 5 == 0 ) {
         console.log("buzz");
     }
 
-    //definisco i numeri multipli di 5;
+    //se il numero non è multiplo di 3 e 5 e non è un multiplo di 3, allora;
     else if ( i % 3 == 0 ) {
     console.log("fizz");
     }
-}
 
-document.getElementById('lista').innerHTML = (i);
+    //se il numero non ha nessuna delle condizioni precedenti allora verra stampato senza modifiche;
+    else {
+        console.log(i);
+    }
+}
